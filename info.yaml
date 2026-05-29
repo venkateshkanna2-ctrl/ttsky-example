@@ -25,7 +25,7 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-   ui[0]: "Bit_in — Serial data input (LSB first: 7 bits operand A, then 7 bits operand B)"
+  ui[0]: "Bit_in — Serial data input (LSB first: 7 bits operand A, then 7 bits operand B)"
   ui[1]: "op[0] — Opcode bit 0 (LSB) — stable parallel input throughout operation"
   ui[2]: "op[1] — Opcode bit 1"
   ui[3]: "op[2] — Opcode bit 2 (MSB)"
