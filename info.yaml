@@ -3,7 +3,7 @@ project:
   title:        "ALU4"      # Project title
   author:       "VENKAT"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  description:  "ALU RESPONSIBEL FOR ARITHMETIC  OPREATION"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc.
   clock_hz:     5000       # 5kHz (or 0 if not applicable)
 
@@ -17,10 +17,10 @@ project:
   # Source files must be in ./src and you must list each source file separately, one per line.
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
-    - "tt_um_alu7b.v"
-    - "serial_alu_ctrl.v"
-    - "alu_7b.v"
-
+    -"alu_7b.v"
+    -"serial_alu_ctrl.v"
+    -"tt_um_alu7b.v"
+    - 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
