@@ -3,9 +3,9 @@
 # Shuttle: SKY26a  |  PDK: sky130A  |
 
 project:
-  title:        "ALU"      # Project title
-  author:       "VENKAT"      # Your name
-   discord:     "sharif_g230"
+  title:       "ALU"
+  author:      "VENKI"
+  discord:     "sharif_g230"
   description: >
     7-bit ALU with LSB-first serial input and 8-bit parallel output.
     Supports ADD, AND, OR, XOR and SUB. Protocol: 7 bits operand A + 7 bits
@@ -15,10 +15,10 @@ project:
   language:    "Verilog"
   clock_hz:    50000000   # 50 MHz — TinyTapeout digital IO maximum
 
-  # How many tiles your design occupies? A single tile is about 167x108 uM.
-  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+  # One minimum tile (160 x 100 um) is sufficient for this ALU
+  tiles: "1x1"
 
-  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  # Top module name MUST start with "tt_um_"
   top_module: "tt_um_alu7b"
 
   # Source files — also update PROJECT_SOURCES in test/Makefile
@@ -27,7 +27,7 @@ project:
     - "serial_alu_ctrl.v"
     - "tt_um_alu7b.v"
 
-  # Pin map — all fields must be present (do not add or remove pins)
+# Pin map — all fields must be present (do not add or remove pins)
 pinout:
 
   # Dedicated inputs
@@ -39,7 +39,7 @@ pinout:
   ui[5]: ""
   ui[6]: ""
   ui[7]: ""
-  
+
   # Dedicated outputs
   uo[0]: "Data_out[0] — Result bit 0 (LSB)"
   uo[1]: "Data_out[1] — Result bit 1"
