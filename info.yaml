@@ -47,7 +47,7 @@ pinout:
 
 
   # Bidirectional pins
- uio[0]: "Done — One-cycle high pulse (1 CLK) indicating operation result is valid"
+  uio[0]: "Done — One-cycle high pulse (1 CLK) indicating operation result is valid"
   uio[1]: ""
   uio[2]: ""
   uio[3]: ""
